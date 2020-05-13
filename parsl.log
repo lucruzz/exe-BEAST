@@ -1,0 +1,46 @@
+2020-05-13 11:55:00.534 parsl.dataflow.dflow:83 [DEBUG]  Starting DataFlowKernel with config
+Config(
+    app_cache=True, 
+    checkpoint_files=None, 
+    checkpoint_mode=None, 
+    checkpoint_period=None, 
+    data_management_max_threads=10, 
+    executors=[ThreadPoolExecutor(
+        label='threads', 
+        managed=True, 
+        max_threads=2, 
+        storage_access=None, 
+        thread_name_prefix='', 
+        working_dir=None
+    )], 
+    initialize_logging=True, 
+    lazy_errors=True, 
+    max_idletime=120.0, 
+    monitoring=None, 
+    retries=0, 
+    run_dir='runinfo', 
+    strategy='simple', 
+    usage_tracking=False
+)
+2020-05-13 11:55:00.536 parsl.dataflow.dflow:84 [INFO]  Parsl version: 0.9.0
+2020-05-13 11:55:00.536 parsl.dataflow.usage_tracking.usage:126 [DEBUG]  Tracking status: False
+2020-05-13 11:55:00.536 parsl.dataflow.usage_tracking.usage:127 [DEBUG]  Testing mode   : False
+2020-05-13 11:55:00.536 parsl.dataflow.dflow:110 [INFO]  Run id is: 98da0f8d-38ed-4e49-b215-fc5eb23f54e2
+2020-05-13 11:55:00.732 parsl.dataflow.memoization:52 [INFO]  App caching initialized
+2020-05-13 11:55:00.735 parsl.dataflow.strategy:125 [DEBUG]  Scaling strategy: simple
+2020-05-13 11:55:00.739 parsl.dataflow.dflow:484 [DEBUG]  Adding output dependencies
+2020-05-13 11:55:00.739 parsl.dataflow.dflow:706 [INFO]  Task 0 submitted for App beast, waiting on tasks []
+2020-05-13 11:55:00.739 parsl.dataflow.dflow:714 [DEBUG]  Task 0 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7f775d8b1f10 state=pending>>
+2020-05-13 11:55:00.740 parsl.dataflow.dflow:452 [INFO]  Task 0 launched on executor threads
+2020-05-13 11:55:00.740 parsl.app.bash.1589381700.7398086:54 [DEBUG]  Executable: beast -beagle_GPU -beagle_order 1 apes.xml
+2020-05-13 11:57:26.786 parsl.dataflow.dflow:288 [INFO]  Task 0 completed
+2020-05-13 11:57:26.786 parsl.dataflow.dflow:292 [INFO]  Standard output for task 0 available at /scratch/cenapadrjsd/lucas.silva/beast/runinfo/002/task_logs/0000/task_0000_beast.stdout
+2020-05-13 11:57:26.786 parsl.dataflow.dflow:294 [INFO]  Standard error for task 0 available at /scratch/cenapadrjsd/lucas.silva/beast/runinfo/002/task_logs/0000/task_0000_beast.stderr
+2020-05-13 11:57:26.787 parsl.dataflow.dflow:864 [INFO]  DFK cleanup initiated
+2020-05-13 11:57:26.787 parsl.dataflow.dflow:750 [INFO]  Summary of tasks in DFK:
+2020-05-13 11:57:26.787 parsl.dataflow.dflow:781 [INFO]  Tasks in state States.done: 0
+2020-05-13 11:57:26.787 parsl.dataflow.dflow:788 [INFO]  End of summary
+2020-05-13 11:57:26.787 parsl.dataflow.dflow:888 [INFO]  Terminating flow_control and strategy threads
+2020-05-13 11:57:26.788 parsl.executors.threads:96 [DEBUG]  Done with executor shutdown
+2020-05-13 11:57:26.788 parsl.executors.threads:96 [DEBUG]  Done with executor shutdown
+2020-05-13 11:57:26.788 parsl.dataflow.dflow:920 [INFO]  DFK cleanup complete
