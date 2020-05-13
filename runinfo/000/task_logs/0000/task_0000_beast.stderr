@@ -1,0 +1,3 @@
+--> executable follows <--
+beast -beagle_gpu -beagle_order 1 inputs/apes.xml
+--> end executable <--
