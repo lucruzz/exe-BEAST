@@ -8,7 +8,7 @@ parsl.config.retries = 2
 parsl.load(config)
 
 p = Path('.')
-fasta = list(p.glob('./*.xml'))
+fasta = list(p.glob('./inputs/*.xml'))
 
 @bash_app
 def beast(in_file, stderr = parsl.AUTO_LOGNAME, stdout = parsl.AUTO_LOGNAME):
