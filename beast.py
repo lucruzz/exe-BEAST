@@ -4,7 +4,6 @@ from parsl.app.app import python_app, bash_app
 from parsl.configs.local_threads import config
 from pathlib import Path
 
-parsl.config.retries = 2
 parsl.load(config)
 
 p = Path('.')
@@ -16,4 +15,4 @@ def beast(in_file, stderr = parsl.AUTO_LOGNAME, stdout = parsl.AUTO_LOGNAME):
 
 for i in fasta:
     beast_future = beast(i)
-    beast_future.result()
+beast_future.result()
